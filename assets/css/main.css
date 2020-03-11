@@ -1519,6 +1519,13 @@ input, select, textarea {
 				width: auto;
 			}
 
+		.profile {
+			display: block;
+			margin: 0 auto;
+			border-radius: 50%;
+			width: 10%;
+		}
+
 /* List */
 
 	ul {
@@ -2378,6 +2385,10 @@ input, select, textarea {
 
 	@media screen and (max-width: 840px) {
 
+		.profile {
+			width: 25%;
+		}
+
 		/* Basic */
 
 			body {
@@ -2460,6 +2471,7 @@ input, select, textarea {
 /* Mobile */
 
 	@media screen and (max-width: 736px) {
+
 
 		/* Basic */
 
