@@ -1805,6 +1805,34 @@ input, select, textarea {
 				background: rgba(58, 57, 57, 0.025);
 			}
 
+		input[type="button"].style4,
+		input[type="submit"].style4,
+		input[type="reset"].style4,
+		button.style4,
+		.button.style4 {
+			background: #35b88f;
+			padding: 0.6em 2em;
+		}
+
+			input[type="button"].style4:hover,
+			input[type="submit"].style4:hover,
+			input[type="reset"].style4:hover,
+			button.style4:hover,
+			.button.style4:hover {
+				background: #45c89f;
+			}
+
+	.project-buttons {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		/* flex-wrap: wrap; */
+	}
+
+	.button.style4.source {
+		margin-right: 1.4em;
+	}
+
 /* Box */
 
 	.box {
@@ -1910,6 +1938,7 @@ input, select, textarea {
 			.box.style2 .inner {
 				position: relative;
 				padding: 40px 0 0px 0;
+				/* height: 200px; */
 			}
 
 				.box.style2 .inner:after {
@@ -2643,3 +2672,46 @@ input, select, textarea {
 			}
 
 	}
+
+
+/* Skills Section */
+
+.skill {
+	background: url('../../images/thumbs/01.jpg');
+	background-repeat: no-repeat;
+	background-size: 90%;
+	background-position: center;
+	height: 200px;
+	color: white;
+	fill: currentColor;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.skill-list {
+	list-style: none;
+	list-style-position: outside;
+	padding-left: 0;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.skill-list li {
+	position: relative;
+	padding-left: 20px;
+	margin: 0;
+}
+
+.skill-list li:before {
+	content: '';
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	background-image: url('images/triangle-down.svg');
+	background-size: cover;
+	background-position: center;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
